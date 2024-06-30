@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <h1>Welcome to our party</h1>
+    <form action="https://formspree.io/f/mwpekkjd" method="POST">
+        <div class="Personal-info">
+            <h3>Personal info</h3>
+            <label for="First-name">First name</label>
+            <input name="First name" type="text" id="First-name" required>
+            <label for="Last-name">Last name</label>
+            <input name="Last name" type="text" id="Last-name" required>
+            <label for="Email">Email</label>
+            <input name="Email" type="email" id="Email">
+            <label for="Phone-num">Phone number</label>
+            <input name="Phone number" type="number" id="Phone-num" required>
+        </div>
+        <div class="Res-info">
+            <h3>Reservation info</h3>
+            <label for="date">Date</label>
+            <select id="date" name="Party Date">
+                <option value="Friday">28/6/2024 Friday</option>
+                <option value="Saturday">29/6/2024 Saturday</option>
+                <option value="Sunday">30/6/2024 Sunday</option>
+            </select>
+            <label for="tickets">Amount of tickets</label>
+            <input name="Number of tickets" type="number" id="tickets" required>
+            <br>
+            <label for="special">Special Request</label>
+            <input name="Special request checkbox" type="checkbox" id="special">
+            <br>
+            <textarea name="Special request" id="special-re"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
